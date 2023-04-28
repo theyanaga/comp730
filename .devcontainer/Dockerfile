@@ -3,6 +3,8 @@ FROM ubuntu:22.04
 RUN mkdir /workspace
 WORKDIR /workspace
 
+COPY . .
+
 RUN apt-get update \
 	&& apt-get install --yes \
 		curl \
